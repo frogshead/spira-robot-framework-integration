@@ -149,7 +149,7 @@ class SpiraPostResults():
                 success_count = 0
                 for test_result in test_results:
                     # Get the current date/time
-                    current_time = datetime.datetime.now(datetime.UTC)
+                    current_time = datetime.datetime.utcnow()
 
                     # Send the result
                     is_error = self.sendResult(test_result, current_time)
